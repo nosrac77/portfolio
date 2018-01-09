@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from portfolio.wesbite import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(r'^$', views.home_view, name='home')
 ]
