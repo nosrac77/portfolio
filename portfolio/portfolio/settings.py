@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'website',
     'bootstrap4',
-    'psycopg2'
+    'psycopg2',
+    'storages'
 ]
 
 MIDDLEWARE = [
