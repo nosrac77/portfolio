@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', '')
 
-ALLOWED_HOSTS = ['ec2-54-91-212-233.compute-1.amazonaws.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['ec2-54-91-212-233.compute-1.amazonaws.com', '127.0.0.1', 'localhost', 'http://carson-newton.me/', 'carson-newton.me']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'website',
-    'bootstrap4',
+    'bootstrap3',
     'psycopg2',
     'storages'
 ]
