@@ -48,7 +48,7 @@
 						<ul id="nav" class="nav">
 							<li class="menu-item"><a href="#section-about" title="About"><i class="icon-user"></i></a></li>
                             {% load static %}
-							<li class="menu-item"><a class="smoothScroll" href="{% static "website/img/carson-newton-resume.pdf" %}" title="Resume"><i class="icon-file"></i></a></li>
+							<li class="menu-item"><a href="{% static "website/img/carson-newton-resume.pdf" %}" title="Resume"><i class="icon-file"></i></a></li>
 							<li class="menu-item"><a href="#section-works" title="Works"><i class="icon-briefcase"></i></a></li>
 							<li class="menu-item"><a href="#section-contact" title="Contact"><i class="icon-envelope"></i></a></li>
 						</ul><!--/ uL#nav -->
@@ -392,7 +392,8 @@
 					<h5>PORTFOLIO</h5>
 				</div>
 				<div class="col-lg-6">
-					<p><img class="img-responsive" src="assets/img/port01.jpg" alt=""></p>
+                    {% load static %}
+					<p><img class="img-responsive" src="{% static "website/img/port01.png" %}" alt="Review Improve Website"></p>
 				</div>
 				<div class="col-lg-3">
 					<p>REVIEW IMPROVE</p>
@@ -404,7 +405,8 @@
 				</div>
 
 				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port02.jpg" alt=""></p>
+                    {% load static %}
+					<p><img class="img-responsive" src="{% static "website/img/port02.png" %}" alt="Tron Communication Website"></p>
 				</div>
 				<div class="col-lg-3">
 						<p>TRON COMMUNICATION WEBSITE</p>
@@ -416,7 +418,7 @@
 				</div>
 
 				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port03.jpg" alt=""></p>
+					<p><img class="img-responsive" src="assets/img/port03.jpg" alt="Amazon Alexa"></p>
 				</div>
 				<div class="col-lg-3">
 						<p>ALEXA ADVENTURES</p>
