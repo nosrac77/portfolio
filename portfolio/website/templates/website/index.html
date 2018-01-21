@@ -46,10 +46,11 @@
 				<div class="row">
 					<div class="dropdown">
 						<ul id="nav" class="nav">
-							<li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="icon-file"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="icon-briefcase"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
+							<li class="menu-item"><a href="#section-about" title="About"><i class="icon-user"></i></a></li>
+                            {% load static %}
+							<li class="menu-item"><a href="{% static "website/img/carson-newton-resume.pdf" %}" title="Resume"><i class="icon-file"></i></a></li>
+							<li class="menu-item"><a href="#section-works" title="Works"><i class="icon-briefcase"></i></a></li>
+							<li class="menu-item"><a href="#section-contact" title="Contact"><i class="icon-envelope"></i></a></li>
 						</ul><!--/ uL#nav -->
 					</div><!-- /.dropdown -->
 
@@ -73,7 +74,7 @@
 	</div><!--/.#headerwrap -->
 
 
-	<section id="about" name="about"></section>
+	<section id="section-about" name="section-about"></section>
 	<div id="intro">
 		<div class="container">
 			<div class="row">
@@ -85,7 +86,8 @@
 					<p>I'm a Full-Stack Developer and Software Engineer with a passion for creating innovative programs. I love designing intuitive and modern interfaces that give users a great experience, but my specialty is cultivating big data through fast and efficient back-end architecture. I also have skills in other fields like marketing, logo design, professional video editing, professional photography, professional music production, and web development.</p>
 				</div>
 				<div class="col-lg-3">
-					<p><a href="#"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
+                    {% load static %}
+                    <p><a href="{% static "website/img/carson-newton-resume.pdf" %}"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
 				</div>
 
 			</div><!--/.row -->
@@ -93,7 +95,6 @@
 	</div><!--/ #intro -->
 
 
-	<section id="resume" name="resume"></section>
 	<!--EDUCATION DESCRIPTION -->
 	<div class="container desc">
 		<div class="row">
@@ -129,6 +130,7 @@
 
 
 	<!--WORK DESCRIPTION -->
+    <section id="section-works" name="section-works"></section>
 	<div class="container desc">
 		<div class="row">
 
@@ -137,9 +139,9 @@
 				</div>
 				<div class="col-lg-6">
 					<p><t>Lead Web Developer</t><br/>
-						Tron Communication LLC &copy; <br/>
+						TRON Communication LLC &copy; <br/>
 					</p>
-					<p><more>Tron Communication is telecommunications company based out of Seattle. They offered me a contract to build their website in October, 2017, which I gladly accepted. Being the sole developer working on the website, my responsibilities encompassed every aspect of the website, such as: programming the front-end (including the design, responsiveness, etc.), deployment of the site, and the back-end architecture necessary (including the framework, server-side responses, etc.).</more></p>
+					<p><more>TRON Communication is telecommunications company based out of Seattle. They offered me a contract to build their website in October, 2017, which I gladly accepted. Being the sole developer working on the website, my responsibilities encompassed every aspect of the website, such as: programming the front-end (including the design, responsiveness, etc.), deployment of the site, and the back-end architecture necessary (including the framework, server-side responses, etc.).</more></p>
 				</div>
 				<div class="col-lg-3">
 					<p><sm>OCTOBER 2017 - CURRENT</sm></p>
@@ -390,7 +392,8 @@
 					<h5>PORTFOLIO</h5>
 				</div>
 				<div class="col-lg-6">
-					<p><img class="img-responsive" src="assets/img/port01.jpg" alt=""></p>
+                    {% load static %}
+					<p><img class="img-responsive" src="{% static "website/img/port01.png" %}" alt="Review Improve Website"></p>
 				</div>
 				<div class="col-lg-3">
 					<p>REVIEW IMPROVE</p>
@@ -402,11 +405,12 @@
 				</div>
 
 				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port02.jpg" alt=""></p>
+                    {% load static %}
+					<p><img class="img-responsive" src="{% static "website/img/port02.png" %}" alt="TRON Communication Website"></p>
 				</div>
 				<div class="col-lg-3">
 						<p>TRON COMMUNICATION WEBSITE</p>
-					<p><more>Tron Communication LLC &copy; is a telecommunications company based out of Seattle, WA. This website is a reflection of the company and allows users to read about their vision, make payments for their telecommunications services, or get in contact with the company through an online contact form. As the company's needs grow and change so must their website; Tron Communication still contacts me from time to time to help them develop their website and grow their brand.<br/><br/>
+					<p><more>TRON Communication LLC &copy; is a telecommunications company based out of Seattle, WA. This website is a reflection of the company and allows users to read about their vision, make payments for their telecommunications services, or get in contact with the company through an online contact form. As the company's needs grow and change so must their website; TRON Communication still contacts me from time to time to help them develop their website and grow their brand.<br/><br/>
 						<sm><i class="icon-tag"></i> front-end</sm></more>
                         <sm><i class="icon-tag"></i> web design</sm></more>
                         <sm><i class="icon-tag"></i> back-end</sm></more>
@@ -414,7 +418,8 @@
 				</div>
 
 				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port03.jpg" alt=""></p>
+                    {% load static %}
+					<p><img class="img-responsive" src="{% static "website/img/port03.jpg" %}" alt="Amazon Alexa"></p>
 				</div>
 				<div class="col-lg-3">
 						<p>ALEXA ADVENTURES</p>
@@ -431,7 +436,7 @@
 
 
 
-	<section id="contact" name="contact"></section>
+	<section id="section-contact" name="section-contact"></section>
 	<!--FOOTER DESCRIPTION -->
 	<div id="footwrap">
 		<div class="container">
