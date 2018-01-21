@@ -33,7 +33,7 @@
         clone=yes
         repo=https://github.com/nosrac77/portfolio.git
         dest=/home/ubuntu/portfolio/
-        version=features-ux-ui
+        version=master
     - name: Create venv
       command: python3 -m venv /home/ubuntu/portfolio/ENV
     - name: Install gunicorn to VENV
