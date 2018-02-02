@@ -15,15 +15,16 @@ $('canvas').mouseenter(function() {
     var skillEl = $('#skills-desc');
     var focusEl = $(this).attr('id');
     var skillsList = [
-                 ['python', 'Python is an interpreted high-level programming language known for high-readability and ease of use. Unveiled in 1991 by it\'s creator, Guido van Rossum, Python is designed with elegeance and simplicity in mind. It\'s extensive built-in support for mathematics make it well-suited for data scientists, although they\'re certainly not the only ones using it. As of January, 2018, Python sits as the fourth most popular programming language and has also been used by the likes of Yahoo, Google, NASA, CERN, and Reddit. I tend to use Python when I need to perform data analysis, quickly automate a task on my computer, or work with on a team with a large shared code-base.', 'https://www.python.org/', 'Learn more about Python'],
+                 ['python', '<p>Python is an interpreted high-level programming language known for high-readability and ease of use. Unveiled in 1991 by it\'s creator, Guido van Rossum, Python is designed with elegeance and simplicity in mind. It\'s extensive built-in support for mathematics make it well-suited for data scientists, although they\'re certainly not the only ones using it. As of January, 2018, Python sits as the fourth most popular programming language and has also been used by the likes of Yahoo, Google, NASA, CERN, and Reddit.</p><br><p>I tend to use Python when I need to perform data analysis, quickly automate a task on my computer, or work with on a team with a large shared code-base.</p>', 'https://www.python.org/', 'Learn more about Python'],
                  ['javascript', 'JavaScript has been described as the wild-wild west of programming.', 'https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics', 'Learn more about JavaScript']
     ]
     for (var i = 0; i < skillsList.length; i++) {
         if (skillsList[i][0] == focusEl) {
             var skillText = skillsList[i][1];
             if (skillEl.text() != skillText) {
+                alert('why');
                 $('.skills-text').hide().fadeIn();
-                skillEl.text(skillText);
+                skillEl.html(skillText);
                 $('#skills-link').attr('href', skillsList[i][2]).text(skillsList[i][3]);
                 break;
             }
