@@ -1,0 +1,7 @@
+@media (min-width: 1200px) {
+  /* Skill Description */
+
+  #skills-description-container {
+    min-height: 650px;
+  }
+}
