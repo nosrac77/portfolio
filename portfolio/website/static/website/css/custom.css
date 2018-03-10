@@ -1,0 +1,11 @@
+@media (min-width: 1200px) {
+
+  /* Skills Section */
+
+  #skills-description-container {
+    min-height: 650px;
+  }
+  #skills-header-div {
+    margin-bottom: 10px;
+  }
+}

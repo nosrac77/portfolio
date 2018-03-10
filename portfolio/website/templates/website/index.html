@@ -28,7 +28,10 @@
     <link href="{% static "website/css/main.css" %}" rel="stylesheet">
 
     {% load static %}
-	<link rel="stylesheet" href="{% static "website/css/font-awesome.min.css" %}">
+    <link href="{% static "website/css/custom.css" %}" rel="stylesheet">
+
+    {% load static %}
+	  <link rel="stylesheet" href="{% static "website/css/font-awesome.min.css" %}">
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
@@ -166,15 +169,17 @@
 	<div id="skillswrap">
 		<div class="container">
 			<div class="row">
-					<div class="col-lg-2 col-lg-offset-1">
-						<h5>SKILLS</h5>
-					</div>
-            </div>
-            <div class="row">
-                    <div class="col-lg-3">
-                        <p id="skills-desc">Lorem Ipsum Python related stuff, this shouldn't push into the bubbles to the right. This should instead wrap before hitting them. Testing something out now. This box seems to work the way I want it to for the most part, so maybe all I need is more text.</p>
-                    </div>
-                    <div class="col-lg-3 centered">
+				<div id="skills-header-div" class="col-lg-2 col-lg-offset-1">
+					<h5>SKILLS</h5>
+				</div>
+      </div>
+      <div class="row">
+
+        <div id="skills-description-container" class="col-lg-3">
+          <article class ="skills-text" id="skills-desc"></article>
+          <a class="skills-text" id="skills-link" href="#"></a>
+        </div>
+          <div class="col-lg-3 centered">
 						<canvas id="python" height="130" width="130"></canvas>
 						<p>Python</p>
 						<br>
@@ -228,7 +233,7 @@
 								var myDoughnut = new Chart(document.getElementById("jquery").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-                    <div class="col-lg-3 centered">
+          <div class="col-lg-3 centered">
 						<canvas id="django" height="130" width="130"></canvas>
 						<p>Django</p>
 						<br>
@@ -246,7 +251,7 @@
 								var myDoughnut = new Chart(document.getElementById("django").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-                    <div class="col-lg-3 centered">
+          <div class="col-lg-3 centered">
 						<canvas id="node" height="130" width="130"></canvas>
 						<p>Node.js</p>
 						<br>
@@ -264,7 +269,7 @@
 								var myDoughnut = new Chart(document.getElementById("node").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-                    <div class="col-lg-3 centered">
+          <div class="col-lg-3 centered">
 						<canvas id="pyramid" height="130" width="130"></canvas>
 						<p>Pyramid</p>
 						<br>
@@ -282,7 +287,7 @@
 								var myDoughnut = new Chart(document.getElementById("pyramid").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-                    <div class="col-lg-3 col-lg-offset-3 centered">
+          <div class="col-lg-3 centered">
 						<canvas id="html" height="130" width="130"></canvas>
 						<p>HTML | CSS</p>
 						<br>
@@ -300,7 +305,7 @@
 								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-                    <div class="col-lg-3 centered">
+          <div class="col-lg-3 centered">
 						<canvas id="bootstrap" height="130" width="130"></canvas>
 						<p>Bootstrap</p>
 						<br>
@@ -318,7 +323,7 @@
 								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-                    <div class="col-lg-3 centered">
+          <div class="col-lg-3 centered">
 						<canvas id="sql" height="130" width="130"></canvas>
 						<p>SQL</p>
 						<br>
@@ -336,7 +341,7 @@
 								var myDoughnut = new Chart(document.getElementById("sql").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					<div class="col-lg-3 col-lg-offset-3 centered">
+					<div class="col-lg-3 centered">
 						<canvas id="sony" height="130" width="130"></canvas>
 						<p>Sony Vegas Pro</p>
 						<br>
@@ -354,9 +359,9 @@
 								var myDoughnut = new Chart(document.getElementById("sony").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-                    <div class="col-lg-3 centered">
+          <div class="col-lg-3 centered">
 						<canvas id="power-director" height="130" width="130"></canvas>
-						<p>Power Director</p>
+						<p>PowerDirector</p>
 						<br>
 						<script>
 							var doughnutData = [
@@ -374,7 +379,7 @@
 					</div>
 					<div class="col-lg-3 centered">
 						<canvas id="reason" height="130" width="130"></canvas>
-						<p>Propellerhead Reason</p>
+						<p>Reason</p>
 						<br>
 						<script>
 							var doughnutData = [
