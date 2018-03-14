@@ -16,32 +16,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Website for Carson Newton featuring resume and portfolio.">
     <meta name="author" content="Carson Newton">
-    {% load static %}
-    <link rel="shortcut icon" href="{% static "website/ico/favicon.png" %}">
+
+    <link rel="shortcut icon" href="ico/favicon.png">
 
     <title>Carson Newton - Software Engineer and Full-Stack Developer</title>
 
-    {% load static %}
-    <link href="{% static "website/css/bootstrap.css" %}" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+	  <link rel="stylesheet" href="css/font-awesome.min.css">
 
-    {% load static %}
-    <link href="{% static "website/css/main.css" %}" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
-    {% load static %}
-    <link href="{% static "website/css/custom.css" %}" rel="stylesheet">
 
-    {% load static %}
-	  <link rel="stylesheet" href="{% static "website/css/font-awesome.min.css" %}">
+    <script src="js/jquery.min.js"></script>
 
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
 
-    {% load static %}
-    <script src="{% static "website/js/jquery.min.js" %}"></script>
-    {% load static %}
-    <script type="text/javascript" src="{% static "website/js/smoothscroll.js" %}"></script>
-    {% load static %}
-    <script src="{% static "website/js/Chart.js" %}"></script>
+    <script src="js/Chart.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -59,8 +52,8 @@
 					<div class="dropdown">
 						<ul id="nav" class="nav">
 							<li class="menu-item"><a href="#section-about" title="About"><i class="icon-user"></i></a></li>
-                            {% load static %}
-							<li class="menu-item"><a href="{% static "website/img/carson-newton-resume.pdf" %}" title="Resume" id="file-icon"><i class="icon-file"></i></a></li>
+
+							<li class="menu-item"><a href="img/carson-newton-resume.pdf" title="Resume" id="file-icon"><i class="icon-file"></i></a></li>
 							<li class="menu-item"><a href="#section-works" title="Works"><i class="icon-briefcase"></i></a></li>
 							<li class="menu-item"><a href="#section-contact" title="Contact"><i class="icon-envelope"></i></a></li>
                         </ul>
@@ -98,8 +91,8 @@
 					<p>I'm a Software Engineer and Full-Stack Developer with a passion for creating innovative programs. I love designing intuitive and modern interfaces that give users a great experience, but my specialty is cultivating big data through fast and efficient back-end architecture. I also have skills in other fields like marketing, logo design, professional video editing, professional photography, professional music production, and web development.</p>
 				</div>
 				<div class="col-lg-3">
-                    {% load static %}
-                    <p><a href="{% static "website/img/carson-newton-resume.pdf" %}"><i class="icon-file"></i></a> <sm>VIEW PDF</sm></p>
+
+                    <p><a href="img/carson-newton-resume.pdf"><i class="icon-file"></i></a> <sm>VIEW PDF</sm></p>
 				</div>
 
 			</div>
@@ -411,8 +404,8 @@
 					<h5>PORTFOLIO</h5>
 				</div>
 				<div class="col-lg-6">
-                    {% load static %}
-					<p><img class="img-responsive" src="{% static "website/img/port01.png" %}" alt="Review Improve Website"></p>
+
+					<p><img class="img-responsive" src="img/port01.png" alt="Review Improve Website"></p>
 				</div>
 				<div class="col-lg-3">
 					<p>REVIEW IMPROVE</p>
@@ -424,8 +417,8 @@
 				</div>
 
 				<div class="col-lg-6 col-lg-offset-3">
-                    {% load static %}
-					<p><img class="img-responsive" src="{% static "website/img/port02.png" %}" alt="TRON Communication Website"></p>
+
+					<p><img class="img-responsive" src="img/port02.png" alt="TRON Communication Website"></p>
 				</div>
 				<div class="col-lg-3">
 						<p>TRON COMMUNICATION WEBSITE</p>
@@ -437,8 +430,8 @@
 				</div>
 
 				<div class="col-lg-6 col-lg-offset-3">
-                    {% load static %}
-					<p><img class="img-responsive" src="{% static "website/img/port03.jpg" %}" alt="Amazon Alexa"></p>
+
+					<p><img class="img-responsive" src="img/port03.jpg" alt="Amazon Alexa"></p>
 				</div>
 				<div class="col-lg-3">
 						<p>ALEXA ADVENTURES</p>
@@ -487,9 +480,9 @@
 		</div>
 	</div>
 
-    {% load static %}
-    <script src="{% static "website/js/bootstrap.js" %}"></script>
-    {% load static %}
-    <script src="{% static "website/js/app.js" %}"></script>
+
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
