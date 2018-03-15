@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 $('#about-hello').click(function() {
   alert('Hello!');
-})
+});
 
 $('canvas').mouseenter(function() {
   var focusEl = $(this);
