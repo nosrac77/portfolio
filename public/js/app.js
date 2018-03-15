@@ -8,6 +8,10 @@ $(document).ready(function(){
   $('.icon-envelope').css('opacity', '0').delay(1750).fadeTo('slow', 1.00);
 });
 
+$('#about-hello').click(function() {
+  alert('Hello!');
+})
+
 $('canvas').mouseenter(function() {
   var focusEl = $(this);
   var canvasEls = $('canvas');
